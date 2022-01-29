@@ -58,13 +58,13 @@ for word in original:
     for letter in word:
         if letter.isalpha():
             print(MORSE_CODE_DICT[letter.upper()], end=" ")
-            mixer.music.load(r"C:\Users\shiva\OneDrive\Desktop\Coding\Codes and stuff\all audio files\\" + MORSE_CODE_SOUNDS_DICT[letter.upper()])
+            mixer.music.load(r"add the audio files path here and end it with \\" + MORSE_CODE_SOUNDS_DICT[letter.upper()])
             mixer.music.play()
             while pygame.mixer.music.get_busy():
                 pygame.time.Clock().tick(10)
         elif letter.isnumeric():
             print(MORSE_CODE_DICT[letter], end=" ")
-            mixer.music.load(r"C:\Users\shiva\OneDrive\Desktop\Coding\Codes and stuff\all audio files\\" + MORSE_CODE_SOUNDS_DICT[letter])
+            mixer.music.load(r"add the audio files path here and end it with \\" + MORSE_CODE_SOUNDS_DICT[letter])
             mixer.music.play()
             while pygame.mixer.music.get_busy():
                 pygame.time.Clock().tick(10)
@@ -74,7 +74,7 @@ for word in original:
             print(f"The symbol {letter} is not in the database. Sorry!")
         else:
             print(MORSE_CODE_DICT[letter], end=" ")
-            mixer.music.load(r"C:\Users\shiva\OneDrive\Desktop\Coding\Codes and stuff\all audio files\\" + MORSE_CODE_SOUNDS_DICT[letter])
+            mixer.music.load(r"add the audio files path here and end it with \\" + MORSE_CODE_SOUNDS_DICT[letter])
             mixer.music.play()
             while pygame.mixer.music.get_busy():
                 pygame.time.Clock().tick(10)
